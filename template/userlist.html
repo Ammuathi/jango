@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>userlist</title>
+</head>
+<body>
+    <h1> userlist</h1>
+    <ul>
+        {% for user in users %}
+            <li>{{ user.firstname }} {{ user.lastname }} {{ user.email }}</li>
+        {% endfor %}
+    </ul>
+    <a href="/">Go Back to Signup</a>    
+</body>
+</html>
